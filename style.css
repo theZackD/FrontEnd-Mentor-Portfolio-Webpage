@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Space+Grotesk:wght@500;700&display=swap');
+
+body {
+    display: block;
+    place-items: center;
+    background-color: #151515;
+    color: #ffffff;
+    font-family: 'Gloock', serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    overflow-x: hidden;
+}
+
+p {
+    color: #d9d9d9;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+header, footer {
+    display: grid;
+    font-size: 32px;
+    grid-template-areas: "name emptyspace socialmedia";
+    grid-template-columns: 172px 1fr;
+    margin-left: 6%;
+    margin-right: 15%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+}
+
+.socials {
+    cursor: pointer;
+}
+
+#propic {
+    position: absolute;
+    right: 165px;
+    top: 0;
+    z-index: -1;
+}
+
+.name {
+    grid-area: name;
+}
+
+.socmed {
+    grid-area: socialmedia;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    place-items: center;
+}
+
+#circle {
+    position: absolute;
+    top:500px;
+    right: 545px;
+}
+
+#ring1 {
+    position: absolute;
+    left: -120px;
+}
+
+h1 {
+    font-size: 88px;
+    letter-spacing: -2.5px;
+    line-height: 88px;
+}
+
+
+
+/* Intro --------------------------------------------*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    margin: 6%;
+    /* width: 55%; */
+}
+
+.introp {
+    width: 36ch;
+    margin-bottom: 5%;
+}
+
+.introttl > span {
+    border-bottom: #4ee1a0 solid 6px;
+}
+
+.introttl {
+    margin-top: auto;
+    margin-bottom: 1.52rem;
+    width: 13ch;
+}
+
+button {
+    height: 38px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: inherit;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    border-bottom: #4ee1a0 2px solid;
+    padding-bottom: 0.3%;
+    width:fit-content;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+button:hover {
+    color: #4ee1a0;
+}
+
+/* Skills ------------------------------*/
+
+#ring2 {
+    position: absolute;
+    right: -20%;
+    bottom: -90%;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 6%;
+    border-top: #ffffff solid 1px;
+    padding-top: 2.5%;
+    margin-top: 15%;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+}
+
+
+
+
+
+
+/* -Projects-----------------------------------------------*/
+
+.pjtbox > img {
+    max-width: 100%;
+}
+
+.pjtbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    display: grid;
+    margin: 6%;
+    margin-bottom: 15%;
+}
+
+.pjttitle {
+    display: grid;
+    grid-template-areas: "title empty contact";
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin-right: 6%;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+.thumbnail {
+    height: auto;
+    position: relative;
+    width: 30em;
+    height: auto;
+    z-index: -1;
+
+}
+
+.container > *:not(.overlay) {
+    position: absolute;
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+}
+
+
+.overlay {
+    width: 30em;
+    aspect-ratio: 1.35;
+    max-width: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .5);
+
+}
+
+/* .container > .imgbuttons {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    left: 35%;
+    top: 35%;
+    text-align: center;
+
+} */
+
+.container > .imgbuttons {
+    display: grid;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    gap: 25%;
+    opacity: 0;
+    transition: opacity .35s ease;
+    z-index: 25;
+}
+
+/* .Outline {
+    outline: auto;
+} */
+
+.Code {
+    width: 11.5ch;
+}
+
+.container:hover .imgbuttons {
+    opacity: 1;
+  }  
+
+
+
+/* -Contact------------------------------------------------------*/
+
+
+#ring3 {
+    position: absolute;
+}
+
+
+
+.endofdoc {
+    background-color: #242424;
+    width: 100vw;
+}
+
+.Contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 6%;
+    margin-bottom: 2.5%;
+    margin-top: 25%;
+
+
+}
+
+footer {
+}
+
+.condiv1 {
+    display: grid;
+    margin-top: 3.5%;
+}
+
+.Contactcontent {
+    width: 38ch;
+}
+
+.Contacttl {
+    margin-bottom: 14px;
+}
+
+form {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Inputf {
+    background-color: transparent;
+    color: #d9d9d9;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 23px;
+    border: none;
+    border-bottom: #d9d9d9 solid 1px;
+}
+
+.Inputf:focus, .Inputf:active {
+    border-bottom: #4ee1a0 2px solid;
+    outline: none;
+}
+
+.Inpute {
+    background-color: transparent;
+    color: #d9d9d9;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 23px;
+    border: none;
+    border-bottom: #ff0000 2px solid;
+}
+
+.Inpute:focus, .Inpute:active {
+    border-bottom: #ff0000 2px solid;
+    outline: none;
+}
+
+.error {
+    font-size: 12px;
+    color: #ff0000;
+    text-align: right;
+}
+
+
+
+.msg {
+    padding-bottom: 60px;
+}
+
+
+
+
+/*-Media----------------------------------------------------------*/
+
+@media (max-width:765px) {
+
+    h1 {
+        font-size: 72px;
+    }
+
+    .introttl {
+        width: 9ch;
+        margin-bottom: 60px;
+    }
+
+    #circle {
+        right: -60px;
+        top: 400px;
+    }
+
+    header {
+        margin: 20px;
+        margin-top: -35px;
+    }
+
+    footer {
+        margin: 20px;
+
+    }
+
+    .projects, .Contact, .skills {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #propic {
+        right: 0;
+        width: 322px;
+        height: auto;
+    }
+
+    .Contact {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        text-align: center;
+    }
+
+    .conbut {
+        margin-top: 20px;
+        margin-left: 40%;
+        width: 53%;
+    }
+
+    #ring2 {
+        top: 900px;
+    }
+
+
+}
+
+
+
+@media (max-width: 375px) {
+
+       body {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+       }
+
+       header, footer {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+       } 
+
+       #propic {
+        position: relative;
+        outline: auto;
+       }
+
+       h1 {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.25px;
+       }
+
+       .intro {
+        display: flex;
+        flex-direction: column;
+        outline: auto;
+        width: 100vw;
+        align-items: center;
+        margin: 0;
+       }
+       .introttl {
+        text-align: center;
+        width: auto;
+       }
+
+       .introp {
+        width: auto;
+        margin: 1.5%;
+        margin-bottom: 10%;
+        text-align: center;
+       }
+
+       .skills {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        text-align: center;
+       }
+
+       .boxes {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+       }
+
+       .Contact {
+        margin-top: 50px;
+       }
+
+       .Contactcontent {
+        font-size: 16px;
+        width: 33ch;
+
+       }
+}
