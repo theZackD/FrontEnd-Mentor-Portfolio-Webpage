@@ -19,4 +19,4 @@ ErrorMessage = function() {
 
 }
 
-MSG.addEventListener('click', ErrorMessage)
+MSG.onclick = ErrorMessage()
