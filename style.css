@@ -414,7 +414,6 @@ form {
 
        #propic {
         position: relative;
-        outline: auto;
        }
 
        h1 {
@@ -426,7 +425,6 @@ form {
        .intro {
         display: flex;
         flex-direction: column;
-        outline: auto;
         width: 100vw;
         align-items: center;
         margin: 0;

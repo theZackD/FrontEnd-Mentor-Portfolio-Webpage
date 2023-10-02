@@ -4,12 +4,12 @@ const errMsg = document.querySelector('.error')
 
 let ValidEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ 
 
-let Correct_email = ValidEmail.test(emailadress.value)
+// let Correct_email = ValidEmail.test(emailadress.value)
 
 
 ErrorMessage = function() {
 
-    if (Correct_email) {
+    if (ValidEmail.test(emailadress.value)) {
         errMsg.textContent = '';
         emailadress.className = "Inputf";
     } else {
@@ -19,4 +19,4 @@ ErrorMessage = function() {
 
 }
 
-MSG.onclick = ErrorMessage()
+MSG.addEventListener('click', ErrorMessage)
